@@ -10,7 +10,7 @@ console.log('testing');
 var renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:true});
 
 // default bg canvas color
-//renderer.setClearColor(0x11151c);
+renderer.setClearColor(0x11151c);
 
 //  use device aspect ratio
 renderer.setPixelRatio(window.devicePixelRatio);
