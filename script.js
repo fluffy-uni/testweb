@@ -1,15 +1,16 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.124.0';
-import { RGBELoader  } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/loaders/RGBELoader.js';
-import { EffectComposer } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/RenderPass.js';
-import { AfterimagePass } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/AfterimagePass.js';
-import { UnrealBloomPass } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/postprocessing/UnrealBloomPass.js';
-import { OBJLoader } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118.3/build/three.module.js';
+import { RGBELoader  } from 'https://cdn.skypack.dev/pin/three@v0.124.0-SiHM7gHpytK81EPs3fGV/mode=imports,min/unoptimized/examples/jsm/loaders/RGBELoader.js';
+import { EffectComposer } from 'https://cdn.skypack.dev/pin/three@v0.124.0-SiHM7gHpytK81EPs3fGV/mode=imports,min/unoptimized/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'https://cdn.skypack.dev/pin/three@v0.124.0-SiHM7gHpytK81EPs3fGV/mode=imports,min/unoptimized/examples/jsm/postprocessing/RenderPass.js';
+import { AfterimagePass } from 'https://cdn.skypack.dev/pin/three@v0.124.0-SiHM7gHpytK81EPs3fGV/mode=imports,min/unoptimized/examples/jsm/postprocessing/AfterimagePass.js';
+import { UnrealBloomPass } from 'https://cdn.skypack.dev/pin/three@v0.124.0-SiHM7gHpytK81EPs3fGV/mode=imports,min/unoptimized/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { OBJLoader } from 'https://cdn.skypack.dev/pin/three@v0.134.0-mlfrkS6HEbKKwwCDDo6H/mode=imports,min/unoptimized/examples/jsm/loaders/OBJLoader.js';
 
+console.log('testing');
 var renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:true});
 
 // default bg canvas color
-renderer.setClearColor(0x11151c);
+//renderer.setClearColor(0x11151c);
 
 //  use device aspect ratio
 renderer.setPixelRatio(window.devicePixelRatio);
